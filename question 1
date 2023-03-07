@@ -45,7 +45,25 @@ ans:- //sum of array using anonymous function
             console.log(add)
         }
         sum([1,2,3,4,5,6,7,8]) 
-            
-            
+        
+    d)Return all the prime numbers in an array        
+  //prime number or not
+   function checkprime(number){
+            if(number<=1){
+                return false;
+            }
+            for(i=2;i<number;i++){
+                if(number%2==0){
+                    return 'not a prime';
+                }
+                return 'prime';
+
+            }
+        }
+        let isprime
+        isprime=checkprime(1)
+        console.log(isprime)
+        
+        
             
             
