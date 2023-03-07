@@ -1,0 +1,37 @@
+1)Do the below programs in anonymous function & IIFE
+a)Print odd numbers in an array
+ans:- //anonymous function to find odd numbers
+        var oddanonymous=function(arr){
+            for(i=0;i<arr.length;i++){
+                if(arr[i]%2!==0){
+                    console.log(arr[i])
+                }
+            }
+        }
+        oddanonymous([1,2,3,4,5,6,7,8]) 
+
+//iife function to find odd numbers
+        (
+            function(arr){
+                for(i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+
+            }
+        )([1,2,3,4,5,6,7,8,9])
+
+b)Convert all the strings to title caps in a string array
+ans:-
+            function titlecase(arr){
+                var sentence=arr.toLowerCase().split(" ")
+                for(i=0;i<sentence.length;i++){
+                    sentence[i]=sentence[i][0].toUpperCase()+sentence[i].slice(1)
+                }
+                console.log(sentence.join(" "))
+
+            }
+            titlecase("tutorix is one of best e-platforms")
+            
+            
