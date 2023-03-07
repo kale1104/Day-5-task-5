@@ -34,6 +34,18 @@ ans:-
             }
             titlecase("tutorix is one of best e-platforms")
             
+ c)Sum of all numbers in an array
+ans:- //sum of array using anonymous function 
+        var sum=function(arr){
+            var add=0
+            for(i=0;i<arr.length;i++){
+                add+=arr[i]
+                
+            }
+            console.log(add)
+        }
+        sum([1,2,3,4,5,6,7,8]) 
+            
             
             
             
